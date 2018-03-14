@@ -5,15 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Domain for sale</title>
+        
+        <script>
+            function showEmail() {
+                email = "U2FsdGVkX18aF6OpiyBDdgQ5H0RfFobKkqLsmtSvFRSbjSZVOWsIzboUYYhMCART"
+                document.getElementById("captcha").innerHTML = "Email: " + CryptoJS.AES.decrypt(email, "berty.langkamp").toString(CryptoJS.enc.Utf8);
+            }
+        </script>
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+
     </head>
     <body>
         <center>
             <h1>This domain (http://zensus2031.de/) and http://zensus2031.info/ are for sale.</h1>
-            <p>If you would like to purchase one or both of these domains please email: <b><i>forsale (at) zensus2031.de</i></b></p>
+            <p>If you would like to purchase one or both of these domains please send an email to the adress below.</b></p>
             <br>
             <h1>Dieser domain (http://zensus2031.de/) und http://zensus2031.info/ sind zu verkaufen.</h1>
-            <p>Falls sie diese Domains kaufen möchten schreiben Sie bitte eine Email an: <b><i>forsale (at) zensus2031.de</i></b></p>
+            <p>Falls sie diese Domains kaufen möchten schreiben Sie bitte eine Email an die Adresse hier drunter.</b></p>
             <br>
+            <div class="g-recaptcha" data-sitekey="6LfMmEwUAAAAAFpimeI4xHIcpBRgzFt-ZO8xMpPn" data-callback="showEmail"></div>
+            <p id="captcha">Verify to view email adress. Verifizieren sie sich um die email adresse anzugucken.</p>
             <br>
             <p>© 2018 Luca Casonato</p>
         </center>
